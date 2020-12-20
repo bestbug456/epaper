@@ -1,4 +1,4 @@
-# EDP
+# epaper
 E-paper waveshare 2.13 V2 Golang driver
 
 This repository contain the driver working on E-paper waveshare 2.13 V2. Notice that different size of this component need different type of driver. This driver is a porting of the driver released from waveshare. You can find the original driver [here](https://github.com/waveshare/e-Paper/blob/master/RaspberryPi_JetsonNano/python/lib/waveshare_epd/epd2in13_V2.py#L123). This driver have one major change respect the original one which is it check for each command and data send the epaper is not busy. This is done since, for the test I've done, there is a unhandle race condition where you can writer faster then the E-paper can read. 
