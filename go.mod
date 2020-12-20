@@ -1,4 +1,4 @@
-module github.com/bestbug456/EDP
+module github.com/bestbug456/epaper
 
 go 1.14
 

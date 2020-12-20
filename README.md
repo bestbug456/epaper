@@ -19,6 +19,7 @@ func main() {
 	time.Sleep(5 * time.Second)
 }
 
+// getData return a image from the gotchi project, more info at https://github.com/GaelicThunder/Chao-Pi-Adventure
 func getData() []byte {
 	return []byte{255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,
 		255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255,
