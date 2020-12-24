@@ -230,7 +230,6 @@ func (e *Epd) GetBuffer(image *image.RGBA) []byte {
 	imageHeight := image.Rect.Dy()
 
 	if imageWidth == e.Width && imageHeight == e.Height {
-		fmt.Printf("Vertical\n")
 		for y := 0; y < imageHeight; y++ {
 			for x := 0; x < imageWidth; x++ {
 				if isBlack(image, x, y) {
@@ -243,7 +242,6 @@ func (e *Epd) GetBuffer(image *image.RGBA) []byte {
 	}
 
 	if imageWidth == e.Height && imageHeight == e.Width {
-		fmt.Printf("Horizontal\n")
 		for y := 0; y < imageHeight; y++ {
 			for x := 0; x < imageWidth; x++ {
 				if isBlack(image, x, y) {
